@@ -1,0 +1,133 @@
+// Imports //
+
+@import 'normalize.scss';
+@import 'grid.scss';
+@import 'animate.scss';
+
+// Variables //
+
+$blue: #34314C;
+$pink: #ff7473;
+$yellow: #ffc952;
+$grey: #EFEFEF;
+
+// Global Styling //
+
+*{
+    box-sizing: border-box;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: $grey;
+    color: $blue;
+}
+
+h3{
+    font-size: 1.85rem;
+    color: $pink;
+    margin: 10px 0 0 0;
+}
+
+p{
+    line-height: 2;
+    letter-spacing: 0.3px;
+}
+
+
+// Intro Styling //
+
+section.intro{
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient(to top right, rgba(52,49,76, .9), rgba(52,49,76, .95)), url('../images/main_hero.jpg');  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    
+    h1{
+        color: $pink;
+        font-weight: 100;
+        font-size: 4.5rem;
+        margin: 0;
+    }
+    h2{
+        color: $yellow;
+        font-weight: 100;
+        font-size: 2rem;
+    }
+}
+
+
+// Main Content Styling //
+
+ul.skills{
+    li{
+        margin-top: 10px;
+    }
+}
+
+.box{
+    width: 220px;
+    height: 220px;
+    background-color: $blue;
+    float: left;
+}
+
+// Footer //
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: $blue;
+    margin-top: 50px;
+    color: $pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    a{
+        color: $yellow;
+        text-decoration: none;
+    
+    }
+    
+    
+}
+
+
+// Responsive //
+
+@media screen and (max-width:780px){
+    section.intro{
+        h1{
+            font-size: 3rem;
+        }
+        
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:300px){
+    section.intro{
+        h1{
+            font-size: 1rem;
+        }
+        
+        h2{
+            font-size: .5rem;
+        }
+    }
+}
+    
+   
